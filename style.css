@@ -1,3 +1,28 @@
+@font-face {
+  font-family: 'Josefin Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Josefin Slab'), local('JosefinSlab'), url(fonts/46aYWdgz-1oFX11flmyEfaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Josefin Slab';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Josefin Slab SemiBold'), local('JosefinSlab-SemiBold'), url(fonts/NbE6ykYuM2IyEwxQxOIi2BefZI2gqg-NXpw43Z_DJ3I.woff) format('woff');
+}
+@font-face {
+  font-family: 'Great Vibes';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Great Vibes'), local('GreatVibes-Regular'), url(fonts/6q1c0ofG6NKsEhAc2eh-3brIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(fonts/7YGmE4Ls5b94ct65u07hVQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+
 html, body { 
   padding: 0;
   margin: 0;
@@ -90,6 +115,7 @@ div.story {
   padding: 0;
   width: 100%;
   overflow: auto;
+  min-width: 1400px;
 }
 
 div.story div.body_project {
@@ -105,6 +131,7 @@ div.story div.body_story {
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     width: 80%;
+    max-width:1000px;
 }
 
 div.body_story h2#body {
@@ -152,170 +179,119 @@ div.body_story div.horizontal_dotted_line {
     font-weight: 200;
     color: #303030;
 }
-div.photo {
-  background-image: url('../images/ricepaper2.png');
+
+div.future {
+  background-color: #fafafa;
   padding: 0;
   width: 100%;
+  height: 2100px;
   overflow: auto;
+min-width: 1400px;
 }
-  div.photo div.title_photo {
-    padding-top: 3px;
-    background-color: white;
-    padding-bottom: 4px;
-    border-bottom: 2px solid grey;
-  }
+div.body_future h2 {
+    font: 400 130px/0.8 'Great Vibes', Helvetica, sans-serif;
+    color: #800000;
+    text-shadow: 0px 2px 3px #555;
+    position: relative;
+    left: -10px;
+}
 
-  div.photo div.body_photo {
-    margin: 30px 50px 30px 50px;
-  }
+div.body_future h3 {
+    font-family: 'Josefin Slab', serif;
+    color: #800000;
+    font-size:30px;
+    position: relative;
+    top: -30px;
+}
 
-  div.photo div.body_photo img {
-    padding: 0;
-    margin: 0;
-    margin-bottom: -5px;
-  }
+div.body_future div.horizontal_dotted_line {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: -80px;
+    margin-bottom:60px;
+}
 
-  div.photo h2 {
-    font-family: 'Lobster', Georgia, Times, serif;
-    font-size: 60px;
-    font-weight: 100;
-    color: black;
-    opacity: 0.6;
-    filter: alpha(opacity=60);
-  }
+div.future .graphs {
+    display: inline-block;
+}
+div.ind {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 80px;
+}
+div.title {
+    font-family: 'Josefin Slab', serif;
+    color: #800000;
+    font-size: 30px;
+}
+div.sub {
+    font-family: 'Josefin Slab', serif;
+    font-size: 25px;
+    color: #800000;
+    font-style:italic;
+    padding-bottom:20px;
+}
 
-div.contact {
-  background-image: url('../images/ricepaper2.png');
-  height:100%;
+
+div.board {
+  background-image: url('images/ricepaper2.png');
   padding: 0;
   width: 100%;
-  min-height: 650px;
-  min-width: 800px;
-}
-
-div.contact div.title_contact {
-    padding-top: 3px;
-    background-color: white;
-    padding-bottom: 4px;
-    border-bottom: 2px solid grey;
-  }
-
-
-div.contact h2 {
-    font-family: 'Lobster', Georgia, Times, serif;
-    font-size: 60px;
-    font-weight: 100;
-    color: black;
-    opacity: 0.6;
-    filter: alpha(opacity=60);
-  }
-
-  div.contact form {
-    color: white;
-    margin-top: 8%;
-  }
-
-  div.contact input, textarea {
-    width: 500px;
-    padding: 9px;
-    background-color: black;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6);
-    font: 400 12px/1.6 'Open Sans', Verdana, Helvetica, sans-serif;
-    border: none;
-    outline: none;
-    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
-    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
-    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
-    border-radius: 10px;
-    -moz-border-radius: 10px;  
-    opacity: 0.5; 
-    filter: alpha(opacity=50);
-  }
-
-  div.contact textarea {
-    width: 500px;
-    max-width: 500px;
-    height: 150px;
-    line-height: 150%;  
-  }
-
-input:hover, textarea:hover,  
-input:focus, textarea:focus {  
-    border-color: #C9C9C9;  
-    }  
-
-div.contact .submit input {  
-    width: auto;  
-    padding: 9px 15px; 
-    border: 0;  
-    font-size: 14px;  
-    color: #FFFFFF;
-    border-radius: 10px;
-    -moz-border-radius: 10px;   
-}
-
-
-div.blog {
-  background-image: url('../images/ricepaper2.png');
-  padding: 0;
-  width: 100%;
+    height: 1600px;
   overflow: auto;
 }
 
-div.blog div.title_blog {
-    padding-top: 3px;
-    background-color: white;
-    padding-bottom: 4px;
-    border-bottom: 2px solid grey;
-  }
-
-div.blog h2 {
-    font-family: 'Lobster', Georgia, Times, serif;
-    font-size: 60px;
-    font-weight: 100;
-    color: black;
-    opacity: 0.6;
-    filter: alpha(opacity=60);
-  }
-
-div.title_blog a {
-  font-style: italic;
-  color: black;
+h2#board_title {
+    font: 400 130px/0.8 'Great Vibes', Helvetica, sans-serif;
+    color: #800000;
+    text-shadow: 0px 2px 3px #555;
+    position: relative;
+    left: -10px;
 }
-div.title_blog a:hover {
-  font-style: normal;
+div.board div.horizontal_dotted_line {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: -100px;
 }
-
-.tumblr_posts {
+div.members {
+    padding-top: 40px;
+    display: inline-block;
+    padding-left: 50px;
+    padding-right:50px;
 }
-
-ol, li {
-  list-style: none;
+img.pic {
+    width: 15em;
+    border-radius:50%;
 }
-
-.tumblr_post p, li {
-   font: 400 14px/1.6 'Open Sans', Verdana, Helvetica, sans-serif;
-   color: white;
+div.members #name {
+    font-family: 'Josefin Slab', serif;
+    color: #800000;
+    font-size:30px;
 }
-
-.tumblr_post {
-  margin-left: auto;
-  margin-right: auto;
-  width: 800px;
-  padding-bottom: 40px;
-  padding-top: 40px;
-  border-bottom: 1px solid grey;
+div.members #year {
+    font-family: 'Josefin Slab', serif;
+    color: #800000;
+    font-size:20px;
+    position: relative;
+    top: -25px;
 }
-
-.tumblr_description, .tumblr_body {
-  text-align: left;
+.full {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -4em;
 }
-
-.tumblr_link_post {
-  font-size: 20px;
+.footer, .push {
+height: 2em;
 }
-
-.tumblr_post a:hover {
-  font-style: italic;
+.footer {
+    background-color:  #fafafa;
+       padding-top: 10px;
+}
+div.obj {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Josefin Slab', serif;
+    color: #800000;
+    display: inline-block;
 }

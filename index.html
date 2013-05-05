@@ -2,9 +2,10 @@
 <html>
 <head>
 	<title>Women in Computer Science @ UPenn Time Capsule - 2013</title>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+     <script type="text/javascript" src="js/Chart.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    
 
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,600' rel='stylesheet' type='text/css'>
@@ -16,9 +17,9 @@
   <div class="full">
 	 <img alt="full screen background image" src="images/wics.jpg" id="full-screen-background-image" /> 
     <div id="nav">
-        <a href="#story" id= "story" class ="link">OUR LETTER</a>
-      <a href="#future" id= "future" class = "link" >THE FUTURE</a>
-      <a href= "#future" id="future" class="link">THE BOARD</a>
+        <a href="" id= "story" class ="link">OUR LETTER</a>
+      <a href="" id= "future" class = "link" >THE STORY</a>
+      <a href= "" id="board" class="link">THE BOARD</a>
     </div>
     <div class="horizontal_dotted_line"></div>
 	 <div class="title">
@@ -48,49 +49,101 @@
   </div>
 </div>
 
-<div class = "photo" id ="photo">
-  <div class = "title_photo">
-    <h2>Photos (taken lovingly from my Flickr)</h2>
+<div class = "future" id ="future">
+  <div class="body_future">
+      <h2 id="future">Our Story</h2>
+      <div class="horizontal_dotted_line"></div>
+        <div class="graphs">
+            <div class="ind">
+                <div class="title">Percentage of women receiving CS Degrees</div>
+                <div class="sub">(women in blue)</div>
+                <canvas id="graduate-cs" width="400" height="400"></canvas>
+            </div>
+            <div class="ind">
+                <div class="title">Percentage of women in CIS121 (an intro course at Penn)</div>
+                <div class="sub">(women in green)</div>
+                <canvas id="121" width="400" height="400"></canvas>
+            </div>
+            <div class="ind">
+                <div class="title">Percentage of women taking AP Computer Science</div>
+                <div class="sub">(women in red)</div>
+                <canvas id="apcs" width="400" height="400"></canvas>
+            </div>
+        </div>
+           <div class="graphs">
+              <div class="ind">
+                <div class="title">Percentage of women receiving degrees</div>
+                <div class="sub">(women in blue)</div>
+                <canvas id="graduate" width="400" height="400"></canvas>
+            </div>
+            <div class="ind">
+                <div class="title">Percentage of women in BIO121</div>
+                <div class="sub">(women in green)</div>
+                <canvas id="bio" width="400" height="400"></canvas>
+            </div>
+               <div class="ind">
+                <div class="title">Percentage of women taking APs</div>
+                <div class="sub">(women in red)</div>
+                <canvas id="ap" width="400" height="400"></canvas>
+            </div>
+        </div>
+      <h3 id="stats">These are our statistics today. We believe that yours will look more even.</h3>
+        </div>
+      
   </div>
-  <div class="body_photo">
-    <?php 
-    require('photos.php'); 
-    ?>
-  </div>
-</div>
 
-<div class = "blog" id = "blog">
-  <div class = "title_blog">
-    <h2>A snippet of my <a href="http://thisside0fparadise.tumblr.com">TumbleBlog</a> (a mashup of a million different things, me)</h2>
-  </div>
-  <div class="body_blog">
-    <script type="text/javascript" src="http://thisside0fparadise.tumblr.com/js"> </script>
+<div class = "board" id = "board">
+  <div class="body_board">
+      <h2 id="board_title">The Board</h2>
+       <div class="horizontal_dotted_line"></div>
+        <div class="members">
+            <img class="pic" src="images/sandy.jpg"/>
+            <h3 id="name">Sandy Sun</h3>
+            <h4 id="year">CS - Class of 2013</h4>
+        </div>
+        <div class="members">
+            <img class="pic" src="images/gaby.jpg"/>
+            <h3 id="name">Gaby Moreno</h3>
+            <h4 id="year">DMD - Class of 2013</h4>
+        </div>
+      <div class="members">
+            <img class="pic" src="images/johanna.jpg"/>
+            <h3 id="name">Johanna Martens</h3>
+            <h4 id="year">CS - Class of 2014</h4>
+        </div>
+      <br/>
+        <div class="members">
+            <img class="pic" src="images/allison.jpg"/>
+            <h3 id="name">Allison Pearce</h3>
+            <h4 id="year">CS - Class of 2014</h4>
+        </div>
+      <div class="members">
+            <img class="pic" src="images/sneha.jpg"/>
+            <h3 id="name">Sneha Keshwani</h3>
+            <h4 id="year">M&amp;T - Class of 2015</h4>
+        </div>
+        <div class="members">
+            <img class="pic" src="images/clara.jpg"/>
+            <h3 id="name">Clara Wu</h3>
+            <h4 id="year">NETS - Class of 2015</h4>
+        </div>
+      <br/>
+      <div class="members">
+            <img class="pic" src="images/jasmine.jpg"/>
+            <h3 id="name">Jasmine Lee</h3>
+            <h4 id="year">CMPE - Class of 2015</h4>
+        </div>
+      <div class="members">
+        <img class="pic" src="images/teresa.jpg"/>
+          <h3 id="name">Teresa Fan</h3>
+        <h4 id="year">DMD - Class of 2016</h4>
+      </div>
   </div> 
+    <div class="push"></div>
 </div>
-<div class="contact" id = "contact">
-  <div class="title_contact">
-    <h2>Contact Me</h2>
-  </div>
-  <div class="floater"></div>
-  <div class="body_contact">
-    <form name="contact_form" method="post" action="send.php">
-        <p class = "name">
-          <input type="text" name="name" value = "name" onFocus="this.value=''; return false">
-        </p>
-        <p class= "email">
-             <input type="text" name="email" value = "email" onFocus="this.value=''; return false">
-        </p>
-        <p class="url">
-          <input name="url" />
-        </p>
-        <p class = "comments">
-            <textarea  name="comments" value = "comments"></textarea>
-        </p>
-        <p class= "submit">
-            <input type="submit" value="Submit" class = "submit" onClick="sendAlert()">  
-        </p>
-    </form>
-  </div>
-</div>
+      <div class="footer">
+            <div class="obj">COPYRIGHT (C) 2013</div>
+            <div class="obj">DESIGNED, CODED AND WRITTEN, WITH LOVE, BY <em><a href="http://www.clarawu.com">CLARA WU</a></em></div>
+    </div>
 </body>
 </html>
