@@ -100,7 +100,7 @@ div.story div.body_story {
     margin-top: 100px;
     margin-bottom:100px;
     background-color: #fafafa;
-    height: 700px;
+    height: 1400px;
     display:inline-block;
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -119,6 +119,38 @@ div.body_story div.horizontal_dotted_line {
     width: 50%;
     margin: 0 auto;
     margin-top: -100px;
+}
+.body_letter {
+    position: relative;
+    top: 30px;
+    width: 90%;
+    margin-left: 5%;
+}
+.body_letter p{
+    text-align:left;
+    word-spacing:4px;
+    line-height: 20px;
+    width: 90%;
+    margin-left: 5%;
+    font-weight: 200;
+    font-family: 'PT Sans', sans-serif;
+    color: #303030;
+}
+
+.body_letter p#final {
+    position: relative;
+    top: -20px;
+    font: 400 130px/0.8 'Great Vibes', Helvetica, sans-serif;
+    color: #800000;
+    font-size: 50px;
+}
+
+.body_letter p#board {
+    position: relative;
+    top: -60px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 200;
+    color: #303030;
 }
 div.photo {
   background-image: url('../images/ricepaper2.png');
