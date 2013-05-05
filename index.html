@@ -1,0 +1,91 @@
+<!Doctype HTML>
+<html>
+<head>
+	<title>Women in Computer Science @ UPenn Time Capsule - 2013</title>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,600' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="full">
+	 <img alt="full screen background image" src="images/wics.jpg" id="full-screen-background-image" /> 
+    <div id="nav">
+        <a href="#story" id= "story" class ="link">OUR LETTER</a>
+      <a href="#future" id= "future" class = "link" >THE FUTURE</a>
+      <a href= "#future" id="future" class="link">THE BOARD</a>
+    </div>
+    <div class="horizontal_dotted_line"></div>
+	 <div class="title">
+	   <p id="sub">Women in Computer Science Board of 2012-2013</p>
+        <p id="subsub">at the University of Pennsylvania present</p>
+        <h1>The Time <br/></>Capsule</h1>
+	 </div>
+  </div>
+
+<div class= "story" id="story">
+  <div class= "body_project">
+      <div class="body_story">
+          <h2 id="body">Our Letter</h2>
+          <div class="horizontal_dotted_line"></div>
+          <p>Dear Future Penn Computer Science,</p>
+          <p>We are Penn's Women in Computer Science Board and we hope by the time you are reading this - the idea of having a Women in Computer Science club at all will be as ridiculous as having a Men in Computer Science club. Right now - Penn Computer Science is made up of only ~25% women (but we're watching this number grow steadily). We are desperately trying to find our place as a significant majority in Penn CS. WiCS, right now, is about addressing the issues that come with being a women in a hugely male dominated field. We spend some time worrying about imposter syndrome - we are sick of constantly questioning ourselves and why we are able to do what we do. We are absolutely concerned with (and tired of!) being seen more as a potential girlfriend than a colleague. We stress about brogramming (I don't even like beer, does that mean I don't belong in CS?) and how caring about what we wear will effect how our fellow (male) developers see us (will telling him I like clothes make him think I'm stupid?). Many of us grew up feeling like Computer Science was a "guy" thing - and we're still not sure if they were right or wrong. We feel stupid having to learn things we were never exposed to, that are "trivial" to other people, and we struggle with this a lot.</p>
+          <p>We crave mentors - other females we can look up to and see - "hey, one day we can be just like them" - but right now, there aren't many to find in tech - Marissa Meyer and Sheryl Sanberg being the outstanding exceptions. We want this to change. We want there to be a time where guys in CS can't complain about the "perks" we, as women, get in hiring and recruiting, and in the same vein, we want companies to stop actively seeking women, to stop stressing about their first female hire, and put aside the frat-boy culture of many tech startups today. We want our Moore 100 social group to stop being a ridiculous 2:5 or 2:7 or whatever it is - we want that to be the exception not the norm. We want to walk into Moore 100 and feel like we belong, we want to stop hearing the guys at Penn CS complain that there are no "dateable girls" in their CS classes - and we absolutely want people to stop getting fired over awkward, uncomfortable dongle jokes.</p>
+          <p>I hope in whatever year you are reading this, Penn CS will be as close to 50/50 as every other discipline in the College and Wharton. As much as I hope that Penn CS is today's Stanford or CMU, I hope even more that Penn CS has become a place where we don't have to worry about being called "hyper-sensitive" for being offended by jokes made about our gender, I hope that the reasons for feeling like we don't fit in are more related to
+          </p>
+          </p>
+      </div>
+  </div>
+</div>
+
+<div class = "photo" id ="photo">
+  <div class = "title_photo">
+    <h2>Photos (taken lovingly from my Flickr)</h2>
+  </div>
+  <div class="body_photo">
+    <?php 
+    require('photos.php'); 
+    ?>
+  </div>
+</div>
+
+<div class = "blog" id = "blog">
+  <div class = "title_blog">
+    <h2>A snippet of my <a href="http://thisside0fparadise.tumblr.com">TumbleBlog</a> (a mashup of a million different things, me)</h2>
+  </div>
+  <div class="body_blog">
+    <script type="text/javascript" src="http://thisside0fparadise.tumblr.com/js"> </script>
+  </div> 
+</div>
+<div class="contact" id = "contact">
+  <div class="title_contact">
+    <h2>Contact Me</h2>
+  </div>
+  <div class="floater"></div>
+  <div class="body_contact">
+    <form name="contact_form" method="post" action="send.php">
+        <p class = "name">
+          <input type="text" name="name" value = "name" onFocus="this.value=''; return false">
+        </p>
+        <p class= "email">
+             <input type="text" name="email" value = "email" onFocus="this.value=''; return false">
+        </p>
+        <p class="url">
+          <input name="url" />
+        </p>
+        <p class = "comments">
+            <textarea  name="comments" value = "comments"></textarea>
+        </p>
+        <p class= "submit">
+            <input type="submit" value="Submit" class = "submit" onClick="sendAlert()">  
+        </p>
+    </form>
+  </div>
+</div>
+</body>
+</html>
